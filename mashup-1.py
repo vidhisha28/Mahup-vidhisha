@@ -134,7 +134,7 @@ if(flag==1):
 # Email credentials
         from_email = "vidhisha.maken@gmail.com"
         to_email = Email
-        password = "moirfjhxdlbbfcdj"
+        password = "sgjdseahtcjsjzbz"
 
 # Email settings
         subject = "Zip file attached"
