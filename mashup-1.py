@@ -25,11 +25,11 @@ flag=0
 end=0
 import streamlit as st
 import os
-st.title('Mashup:musical_note::musical_note::musical_note:')
-st.write('Made by Nipun Garg')
+st.title('Mashup:notes:	:musical_score::musical_note:')
+st.write('Made by Vidhisha Maken')
 name=st.text_input("Singer Name")
 n=int(st.number_input("No. of videos",step=1))
-duration=int(st.number_input("Duration(in seconds)",step=1))
+duration=int(st.number_input("Duration",step=1))
 
 Email=st.text_input("Email id")
 if st.button('Submit'):
@@ -51,9 +51,12 @@ if st.button('Submit'):
         for i in range(0,n):    
             Download(link[i])
 
+
         directory = os.getcwd()
-        
+
+
         files = os.listdir(directory)
+
 
         mp4_files = [file for file in files if file.endswith('.mp4')]
 
@@ -72,6 +75,9 @@ if st.button('Submit'):
         #from pydub import AudioSegment
 
         import os
+        #AudioSegment.converter = r"C:\Users\91700\Documents\Python\pyAI3.7\Scripts\ffmpeg.exe"
+        #AudioSegment.ffmpeg = r"C:\Users\91700\Documents\Python\pyAI3.7\Scripts\ffmpeg.exe"
+        #AudioSegment.ffprobe = r"C:\Users\91700\Documents\Python\pyAI3.7\Scripts\ffprobe.exe"
 
         directory = os.getcwd()
 
@@ -87,6 +93,7 @@ if st.button('Submit'):
 
 # Trim the audio file
         merged_audio = audio.subclip(0,0)
+        
 
         for i in range(0,len(mp3_files)):
             audio = AudioFileClip(mp3_files[i])
@@ -125,9 +132,9 @@ if(flag==1):
 
         
 # Email credentials
-        from_email = "ngarg2k2testing@gmail.com"
+        from_email = "ishaan191201@gmail.com"
         to_email = Email
-        password = "cfhmoxuzbzlpexii"
+        password = "erwqtvswrvcnokry"
 
 # Email settings
         subject = "Zip file attached"
@@ -159,3 +166,10 @@ if(flag==1):
             smtp.sendmail(from_email, to_email, message.as_string())
             st.write('File sent to', Email)
             end=1
+# import glob
+
+# folder = os.getcwd()
+# if(end==1):
+#     folder=os.getcwd()
+#     for file in glob.glob(os.path.join(folder, '*.mp3')):
+#         os.remove(file)
