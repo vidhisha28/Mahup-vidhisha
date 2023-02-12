@@ -25,8 +25,8 @@ flag=0
 end=0
 import streamlit as st
 import os
-st.title('Mashup:notes:	:musical_score::musical_note:')
-st.write('Made by Vidhisha Maken')
+st.title('Mashup-webApp:notes::musical_score::musical_note:')
+st.write('~By Vidhisha Maken~')
 name=st.text_input("Singer Name")
 n=int(st.number_input("No. of videos",step=1))
 duration=int(st.number_input("Duration",step=1))
@@ -134,7 +134,7 @@ if(flag==1):
 # Email credentials
         from_email = "vidhisha.maken@gmail.com"
         to_email = Email
-        password = "qwertyasdfgh4321"
+        password = "moirfjhxdlbbfcdj"
 
 # Email settings
         subject = "Zip file attached"
