@@ -25,7 +25,7 @@ flag=0
 end=0
 import streamlit as st
 import os
-st.title('Mashup-webApp:notes::musical_score::musical_note:')
+st.title('Mashup-webApp Creating mixes:notes::musical_score:')
 st.write('~By Vidhisha Maken')
 name=st.text_input("Singer Name")
 n=int(st.number_input("No. of videos",step=1))
